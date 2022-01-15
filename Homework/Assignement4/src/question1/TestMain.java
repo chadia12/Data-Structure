@@ -10,7 +10,9 @@ SingleIntegerLinkedList<Integer> slist = new SingleIntegerLinkedList<>();
         slist.add(9);
         slist.add(45);
         slist.display();
+            System.out.println("To Find item: "+slist.find(1));
         System.out.println("The maximum integer is: "+slist.max());
         System.out.println("The minimum integer is: "+slist.min());
+
     }
 }

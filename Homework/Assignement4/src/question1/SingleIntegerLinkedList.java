@@ -46,29 +46,34 @@ else{
     addAfter(item,node);
 }
   }
+  // ADD ITEM
   public void add(int item){
       add(size,item);
   }
+  // - return the number of nodes in the list
   public int size(){
       return size;
   }
+
+// to check the value is in the list or not
   public boolean find(int item){
       Node<Integer> current =head;
       while (current!=null){
-if(current.equals(item))
-    System.out.println("item is found");
+if(current.data == item)
+    return true;
           current = current.next;
       }
-      return true;
+      return false;
   }
-  public void display(){
+  public void display() {
       Node<Integer> current = head;
-      while(current!= null){
+      while (current != null) {
           System.out.println(current.data);
           current = current.next;
       }
   }
 
+  // return the greatest integer number in the list
 public int max(){
       int maxnum =0;
       Node<Integer> current = head;
@@ -79,6 +84,7 @@ public int max(){
       }
       return maxnum;
 }
+//return the smallest integer number in the list
 public int min(){
       int minnum = head.next.data;
       Node<Integer> current= head;
