@@ -3,7 +3,7 @@ package question1;
 public class TestMain {
     public static void main(String[] args) {
 SingleIntegerLinkedList<Integer> slist = new SingleIntegerLinkedList<>();
-        slist.add(100);
+        slist.add(10);
         slist.add(70);
         slist.add(67);
         slist.add(900);

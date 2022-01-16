@@ -86,7 +86,7 @@ public int max(){
 }
 //return the smallest integer number in the list
 public int min(){
-      int minnum = head.next.data;
+      int minnum = head.data;
       Node<Integer> current= head;
       while(current!=null){
         if(current.data < minnum)
