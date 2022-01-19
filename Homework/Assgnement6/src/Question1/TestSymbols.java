@@ -1,12 +1,14 @@
 package Question1;
 
+import java.util.Scanner;
+
 public class TestSymbols {
     public static void main(String[] args) {
-        System.out.println(balancedSymbols("{(2+3)]"));
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter arithmetic operation");
+        String str =input.next();
 
-        System.out.println(balancedSymbols("[{(2+3)}]"));
-
-        System.out.println(balancedSymbols("[)(2+3}]"));
+        System.out.println(balancedSymbols(str));
     }
 
     public static boolean balancedSymbols(String sy) {
